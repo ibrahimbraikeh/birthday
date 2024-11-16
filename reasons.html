@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachrichten</title>
+    <link rel="stylesheet" href="css/message.css">
+</head>
+<body>
+    <div class="messages-container">
+        <button class="back-btn" onclick="window.location.href='index.html';">⬅ Back</button>
+        <h1>💌 Wähle einen Briefumschlag, um eine Nachricht zu lesen</h1>
+        <div class="envelopes">
+            <!-- Envelope 1 -->
+            <div class="envelope" onclick="toggleMessage(1)">
+                <div class="flap"></div>
+                <div class="message" id="message-1">
+                    <p>بحب القدرة يلي عندك انو بعد حديث بأي مشكلة كانت بتقدري الموقف منيح و دائما بتقولي الكلام يلي لازم تقوليه حتى لو كان صعب</p>
+                </div>
+            </div>
+
+            <!-- Envelope 2 -->
+            <div class="envelope" onclick="toggleMessage(2)">
+                <div class="flap"></div>
+                <div class="message" id="message-2">
+                    <p>بحب انك بتعبري عن حبك حتى الشغلات الصغيرة  🌟</p>
+                </div>
+            </div>
+
+            <!-- Envelope 3 -->
+            <div class="envelope" onclick="toggleMessage(3)">
+                <div class="flap"></div>
+                <div class="message" id="message-3">
+                    <p>بحب انك شخص كتير حقيقي و بلا فلتر ابدا و ما بتحسسيني انو لازم انا بيّن بأي طريقة مختلفة لتكوني انت سعيدة 💖</p>
+                </div>
+            </div>
+
+            <!-- Envelope 4 -->
+            <div class="envelope" onclick="toggleMessage(4)">
+                <div class="flap"></div>
+                <div class="message" id="message-4">
+                    <p>انك تبسطي الأمور بطريقتك يلي بتخفف ضغط هائل عني شي ما بيقدر الكل يسويه بشكل مستمر متل ما انت عندك الموهبة لتعمليها🎂</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/message.js"></script>
+</body>
+</html>

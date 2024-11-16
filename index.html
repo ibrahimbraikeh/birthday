@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // Funktion, um das Menü umzuschalten (öffnen und schließen)
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+  
+    <div class="card">
+        <h1>🎉 Alles Gute zum Geburtstag! 🎂</h1>
+        <button class="menu-btn" onclick="toggleMenu()">☰ Menü</button>
+        <div id="menu" class="menu">
+            <ul>
+                <li><a href="pictures.html">صور</a></li>
+                <li><a href="songs.html">أغاني</a></li>
+                <li><a href="reasons.html">ليش بحبك؟</a></li>
+                <li><a href="wishes.html">رسالة</a></li>
+            </ul>
+        </div>
+    </div>
+      <!-- Video im Hintergrund -->
+      <div class="video-container">
+        <video autoplay loop id="background-video">
+            <source src="videos/Happy birthday.mp4" type="video/mp4">
+            Dein Browser unterstützt dieses Videoformat nicht.
+        </video>
+    </div>
+</body>
+</html>

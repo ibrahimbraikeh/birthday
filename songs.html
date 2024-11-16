@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs</title>
+    <link rel="stylesheet" href="css/songs.css">
+</head>
+<body>
+    <div class="songs-container">
+        <h1>🎵 Songs 🎵</h1>
+        <button class="back-btn" onclick="window.location.href='index.html';">⬅ Back</button>
+        
+        <!-- Song Controls -->
+        <div class="song" id="song1">
+            <h3>Song 1</h3>
+            <button onclick="playSong('audio1')">▶ Play</button>
+            <button onclick="stopSong('audio1')">⏹ Stop</button>
+            <audio id="audio1" src="songs/song1.mp3"></audio>
+        </div>
+
+        <div class="song" id="song2">
+            <h3>Song 2</h3>
+            <button onclick="playSong('audio2')">▶ Play</button>
+            <button onclick="stopSong('audio2')">⏹ Stop</button>
+            <audio id="audio2" src="songs/song2.mp3"></audio>
+        </div>
+
+        <div class="song" id="song3">
+            <h3>Song 3</h3>
+            <button onclick="playSong('audio3')">▶ Play</button>
+            <button onclick="stopSong('audio3')">⏹ Stop</button>
+            <audio id="audio3" src="songs/song3.mp3"></audio>
+        </div>
+
+        <div class="song" id="song4">
+            <h3>Song 4</h3>
+            <button onclick="playSong('audio4')">▶ Play</button>
+            <button onclick="stopSong('audio4')">⏹ Stop</button>
+            <audio id="audio4" src="songs/song4.mp3"></audio>
+        </div>
+    </div>
+
+    <script src="js/songs.js"></script>
+</body>
+</html>
