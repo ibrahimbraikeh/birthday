@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #56ccf2, #2f80ed);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.songs-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #fff;
+}
+
+.song {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.song h3 {
+    margin: 0 0 10px;
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1769aa;
+}
+
+.back-btn {
+    background-color: #1c1412;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #333;
+}

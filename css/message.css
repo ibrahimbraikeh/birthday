@@ -1,0 +1,102 @@
+/* Allgemeine Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Gradient Background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.messages-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Briefumschläge */
+.envelopes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.envelope {
+    position: relative;
+    width: 300px; /* Größe des Umschlags */
+    height: 340px;
+    background: #ff6f61;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.envelope:hover {
+    transform: scale(1.1);
+}
+
+.flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #e65c00;
+    border-radius: 12px 12px 0 0;
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+/* Nachricht im Umschlag */
+.message {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 95%;
+    height: 70%;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    display: none; /* Anfangs versteckt */
+    padding: 5px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Öffnen des Umschlags */
+.envelope.open .flap {
+    transform: rotateX(180deg); /* Umdrehen der Klappe */
+}
+
+.envelope.open .message {
+    display: block; /* Nachricht anzeigen */
+}
+
+.back-btn {
+    background-color: #1c1412;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #e65c00;
+}
